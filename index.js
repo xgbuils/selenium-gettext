@@ -10,39 +10,28 @@ driver.get('https://xgbuils.github.io/selenium-gettext/')
 .then(function () {
     return driver.findElement(By.css('#displayed-article')).getText()
 })
-.then(function (text) {
-    console.log(JSON.stringify(text))
-})
+.then(showText)
 .then(function () {
     return driver.findElement(By.css('#child-not-displayed')).getText()
 })
-.then(function (text) {
-    console.log(JSON.stringify(text))
-})
+.then(showText)
 .then(function () {
     return driver.findElement(By.css('#article-display-none')).getText()
 })
-.then(function (text) {
-    console.log(JSON.stringify(text))
-})
+.then(showText)
 .then(function () {
     return driver.findElement(By.css('#article-visibility-hidden')).getText()
 })
-.then(function (text) {
-    console.log(JSON.stringify(text))
-})
+.then(showText)
 .then(function () {
     return driver.findElement(By.css('#article-offscreen')).getText()
 })
-.then(function (text) {
-    console.log(JSON.stringify(text))
-})
+.then(showText)
 .then(function () {
     return getTextIfDisplayed(By.css('#article-offscreen'))
 })
-.then(function (text) {
-    console.log(JSON.stringify(text))
-})
+.then(showText)
+.then(quit, quit)
 
 function getTextIfDisplayed(locator) {
     return driver.findElement(locator).then(function (element) {
@@ -50,4 +39,12 @@ function getTextIfDisplayed(locator) {
             return isDisplayed ? element.getText() : null
         })
     })
+}
+
+function showText(text) {
+	console.log(JSON.stringify(text))
+}
+
+function quit() {
+	driver.quit()
 }
