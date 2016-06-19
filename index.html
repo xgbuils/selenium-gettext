@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="utf-8" />
-    <title>getText page</title>
+    <title>getText selenium experiment</title>
 </head>
 <body>
     <h1>Selenium getText lab</h1>
@@ -19,8 +19,16 @@
             <dd>displayed-article</dd>
         </dl>
     </article>
-    <article id="article-display-none" style="display: none;">
+    <article id="child-not-displayed">
         <h2>article 2</h2>
+        <p style="display: none;">article is displayed but this paragraf not</p>
+        <dl>
+            <dt>id: </dt>
+            <dd>child-not-displayed</dd>
+        </dl>
+    </article>
+    <article id="article-display-none" style="display: none;">
+        <h2>article 3</h2>
         <p>this article is not displayed</p>
         <dl>
             <dt>id: </dt>
@@ -28,19 +36,19 @@
         </dl>
     </article>
     <article id="article-visibility-hidden" style="visibility: hidden;">
-        <h2>article 3</h2>
+        <h2>article 4</h2>
         <p>this article is not visible</p>
         <dl>
             <dt>id: </dt>
-            <dd>article2</dd>
+            <dd>article-visibility-hidden</dd>
         </dl>
     </article>
     <article id="article-offscreen" style="margin-top: 2000px;">
-        <h2>article 4</h2>
+        <h2>article 5</h2>
         <p>this article is offscreen</p>
         <dl>
             <dt>id: </dt>
-            <dd>article2</dd>
+            <dd>article-offscreen</dd>
         </dl>
     </article>
 </body>
