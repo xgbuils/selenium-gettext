@@ -6,16 +6,41 @@
 </head>
 <body>
     <h1>Selenium getText lab</h1>
-    <article id="article1">
+    <article id="displayed-article">
         <h2>article 1</h2>
         <p>this is an article element to check
-         what returns the method getText of 
+         what does the method getText of 
 
 
-         Selelenium webdriver</p>
+         Selelenium webdriver
+        return</p>
         <dl>
             <dt>id: </dt>
-            <dd>article1</dd>
+            <dd>displayed-article</dd>
+        </dl>
+    </article>
+    <article id="article-display-none" style="display: none;">
+        <h2>article 2</h2>
+        <p>this article is not displayed</p>
+        <dl>
+            <dt>id: </dt>
+            <dd>article-display-none</dd>
+        </dl>
+    </article>
+    <article id="article-visibility-hidden" style="visibility: hidden;">
+        <h2>article 3</h2>
+        <p>this article is not visible</p>
+        <dl>
+            <dt>id: </dt>
+            <dd>article2</dd>
+        </dl>
+    </article>
+    <article id="article-offscreen" style="margin-top: 2000px;">
+        <h2>article 4</h2>
+        <p>this article is offscreen</p>
+        <dl>
+            <dt>id: </dt>
+            <dd>article2</dd>
         </dl>
     </article>
 </body>

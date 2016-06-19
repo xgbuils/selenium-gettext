@@ -6,8 +6,27 @@ var driver = new selenium.Builder()
     .withCapabilities({'browserName': 'chrome' })
     .build();
 
-driver.get('http://xgbuils.github.io/date-test/').then(function () {
-    return driver.findElement(By.css('#article1')).getText()
+driver.get('https://xgbuils.github.io/selenium-gettext/')
+.then(function () {
+    return driver.findElement(By.css('#displayed-article')).getText()
+})
+.then(function (text) {
+    console.log(JSON.stringify(text))
+})
+.then(function () {
+    return driver.findElement(By.css('#article-display-none')).getText()
+})
+.then(function (text) {
+    console.log(JSON.stringify(text))
+})
+.then(function () {
+    return driver.findElement(By.css('#article-visibility-hidden')).getText()
+})
+.then(function (text) {
+    console.log(JSON.stringify(text))
+})
+.then(function () {
+    return driver.findElement(By.css('#article-off-screen')).getText()
 })
 .then(function (text) {
     console.log(JSON.stringify(text))

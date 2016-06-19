@@ -1,7 +1,7 @@
 {
   "name": "gettext",
   "version": "0.1.0",
-  "description": "experiment to check that returs getText method of selenium-webdriver",
+  "description": "experiment to know what does getText method of selenium-webdriver return",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
