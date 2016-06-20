@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/xgbuils/selenium-gettext/issues"
   },
-  "homepage": "https://github.com/xgbuils/selenium-gettext#readme"
+  "homepage": "https://github.com/xgbuils/selenium-gettext#readme",
+  "dependencies": {
+    "selenium-webdriver": "^2.53.2"
+  }
 }
